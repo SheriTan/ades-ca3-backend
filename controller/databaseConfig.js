@@ -5,10 +5,10 @@ var mysql = require('mysql');
 var dbconnect = {
     getConnection: function () {
         var conn = mysql.createConnection({
-            host: "localhost",
-            user: "root",
-            password: "ST0503",
-            database: "spdiscuss"
+            host: "remotemysql.com",
+            user: "FTrbCnXcs6",
+            password: "ftNqVeIuqh",
+            database: "FTrbCnXcs6"
         });
 
         return conn;
