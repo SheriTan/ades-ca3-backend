@@ -139,7 +139,7 @@ app.post('/reply/:uid/thread/:tid', printDebugInfo, isLoggedInMiddleware, functi
         return;
     }
 
-    if (content === '') {
+    if (content === '' || content === null) {
         res.status(400).send("Please type something!");
         return;
     }
